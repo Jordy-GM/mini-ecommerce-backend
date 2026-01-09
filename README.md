@@ -32,16 +32,18 @@ pgAdmin (opcional)
 
 Arquitectura modular por aplicaciones
 
-3. Estructura del Proyecto (Backend)
+3. ## Estructura del Proyecto (Backend)
+
+```text
 BACKEND/
-├── cart/                  # Lógica del carrito
+├── cart/                     # Lógica del carrito
 │   ├── models.py
 │   ├── serializers.py
 │   ├── services.py
 │   ├── views.py
 │   └── urls.py
 │
-├── products/              # Gestión de productos
+├── products/                 # Gestión de productos
 │   ├── models.py
 │   ├── serializers.py
 │   ├── services.py
@@ -51,19 +53,18 @@ BACKEND/
 │       └── commands/
 │           └── populate_products.py
 │
-├── config/                # Configuración principal de Django
+├── config/                   # Configuración principal de Django
 │   ├── settings.py
 │   ├── urls.py
 │   ├── asgi.py
 │   └── wsgi.py
 │
-├── docs/                  # Documentación (Swagger / OpenAPI)
+├── docs/                     # Documentación (Swagger / OpenAPI)
 │   ├── decorators/
 │   ├── examples/
 │   └── schemas/
 │
-├── venv/                  # Entorno virtual (local)
-│
+├── venv/                     # Entorno virtual (local)
 ├── docker-compose.yml
 ├── dockerfile
 ├── makefile
@@ -71,6 +72,7 @@ BACKEND/
 ├── requirements.txt
 └── .env
 
+```
 4. Endpoints Principales
 Productos
 
